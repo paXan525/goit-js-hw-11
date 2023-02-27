@@ -11,7 +11,7 @@ export default class NewsApiService {
         this.page = 1;
     }
     
-    fetchArticles(searchQuery) {
+    async fetchArticles(searchQuery) {
         
         const searchOptions = `image_type=photo&orientation=horizontal&safesearch=true&per_page=5&page=${this.page}`;
 
