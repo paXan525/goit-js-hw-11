@@ -11,9 +11,9 @@ export default class NewsApiService {
         this.page = 1;
     }
     
-    async fetchArticles(searchQuery) {
+    async fetchImages(searchQuery) {
         
-        const searchOptions = `image_type=photo&orientation=horizontal&safesearch=true&per_page=5&page=${this.page}`;
+        const searchOptions = `image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${this.page}`;
 
         const URL = `${BASE_URL}/?key=${API_KEY}&q=${this.searchQuery}&${searchOptions}`;
         
